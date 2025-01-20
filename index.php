@@ -8,7 +8,7 @@
 <body>
     <?php // index.php
         session_start();
-        require_once 'header.php';
+        require_once 'php/header.php';
         echo "<div class='center'> Bem-Vindo a gpsi22,";
         if ($loggedin) echo "4utilizador, você está ligado.";
         else echo('por favor registe-se ou entre.');
