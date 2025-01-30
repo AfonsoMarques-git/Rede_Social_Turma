@@ -14,7 +14,7 @@
             {
                 if (utilizador.value == '')
                 {
-                    $('#used').html('$nbsp;')
+                    $('#used').html('$&nbsp;')
                     return
                 }
                     $.post
@@ -64,8 +64,8 @@
                     <div id="used">&nbsp</div>
                 </div>
                 <div data-role='fieldcontain'>
-                    <label>Nome de Password</label>
-                    <input type='text' maxlength='16' name='password' value='$password' onBlur='checkUser(this)' /> <!-- mudar texto para password para ocultar a mesma -->
+                    <label>Password</label>
+                    <input type='password' maxlength='16' name='password' value='$password' onBlur='checkUser(this)' /> <!-- mudar texto para password para ocultar a mesma -->
                 </div>
                 <div data-role='fieldcontain'>
                     <input data-transition='slide' type='submit' value='Registar' />

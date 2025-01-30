@@ -2,8 +2,8 @@
 	
 	$dbhost = 'localhost';
 	$dbname = 'gpsi22';
-	$dbuser = 'afonsomarques';
-	$dbpass = 'password123';
+	$dbuser = 'root';
+	$dbpass = '';
 
 	// Correção na ordem dos parâmetros
 	$ligacao = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
