@@ -51,7 +51,7 @@ _REGISTADO;
     // se não tiver registado
     echo <<<_VISITA
                 <div class='center'>
-                    <a data-role='button' data-inline='true' data-icon='home' data-transition="slide" href="index.php">Home</a>
+                    <a data-role='button' data-inline='true' data-icon='home' data-transition="slide" href="../index.php">Home</a>
                     <a data-role='button' data-inline='true' data-icon='plus' data-transition="slide" href="php/signup.php">Registar</a>
                     <a data-role='button' data-inline='true' data-icon='check' data-transition="slide" href="index.php">Entrar</a>
                 </div>
