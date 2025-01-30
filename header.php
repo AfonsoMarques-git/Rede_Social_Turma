@@ -40,19 +40,19 @@ if ($loggedin) {
     echo <<<_REGISTADO
                 <div class='center'>
                     <a data-role='button' data-inline='true' data-icon='home' data-transition="slide" href="index.php?view=$utilizador">Home</a>
-                    <a data-role='button' data-inline='true' data-icon='user' data-transition="slide" href="php/membros.php">Membros</a>
-                    <a data-role='button' data-inline='true' data-icon='heart' data-transition="slide" href="php/amigos.php">Amigos</a><br />
-                    <a data-role='button' data-inline='true' data-icon='mail' data-transition="slide" href="php/mensagens.php">Mensagens</a>
-                    <a data-role='button' data-inline='true' data-icon='edit' data-transition="slide" href="php/perfil.php">Editar Perfil</a>
-                    <a data-role='button' data-inline='true' data-icon='action' data-transition="slide" href="php/logout.php">Sair</a>
+                    <a data-role='button' data-inline='true' data-icon='user' data-transition="slide" href="membros.php">Membros</a>
+                    <a data-role='button' data-inline='true' data-icon='heart' data-transition="slide" href="amigos.php">Amigos</a><br />
+                    <a data-role='button' data-inline='true' data-icon='mail' data-transition="slide" href="mensagens.php">Mensagens</a>
+                    <a data-role='button' data-inline='true' data-icon='edit' data-transition="slide" href="perfil.php">Editar Perfil</a>
+                    <a data-role='button' data-inline='true' data-icon='action' data-transition="slide" href="logout.php">Sair</a>
                 </div>
 _REGISTADO;
 } else {
     // se não tiver registado
     echo <<<_VISITA
                 <div class='center'>
-                    <a data-role='button' data-inline='true' data-icon='home' data-transition="slide" href="../index.php">Home</a>
-                    <a data-role='button' data-inline='true' data-icon='plus' data-transition="slide" href="php/signup.php">Registar</a>
+                    <a data-role='button' data-inline='true' data-icon='home' data-transition="slide" href="index.php">Home</a>
+                    <a data-role='button' data-inline='true' data-icon='plus' data-transition="slide" href="signup.php">Registar</a>
                     <a data-role='button' data-inline='true' data-icon='check' data-transition="slide" href="index.php">Entrar</a>
                 </div>
                 <p class='info'>(Tem de estar registado para entrar no site)</p>
