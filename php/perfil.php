@@ -1,6 +1,6 @@
 <?php
     require_once 'header.php';
-    if (!$isloggedin) die ("</div></body></html>");
+    if (!$loggedin) die ("</div></body></html>");
     echo "<h3>O seu perfil</h3>";
     $result = queryMysql("SELECT * FROM perfis WHERE utilizador = '$utilizador'");
     if (isset($_POST['texto'])) {
@@ -46,6 +46,22 @@
             }
             $tmp = imagecreatetruecolor($tw, $th);
             imagecopyresampled($tmp, $src, 0, 0, 0, 0, $tw, $th, $w, $h); // cópia da imagem redimensionada
+            imageconvolution($tmp, array(array(-1, -1, -1), array(-1, 16, -1), array(-1, -1, -1)), 8, 0); // para a imagem não desfocar
+            imagejpeg($tmp, $saveto);
+            imagedestroy($tmp); // apaga as imagens temporárias da memória
+            imagedestroy($src);
         }
     }
+    mostarPerfil($utilizador);
+    echo <<<_END
+        <form data-ajax='false' method='post' action='perfil.php' enctype='multipart/form-data'>
+            <h3>Introduza ou edite os seus detalhes e/ou faça upload de uma imagem.</h3>
+            <textarea name='texto'>$texto</textarea><br>
+            Imagem: <input type='file' name='image' size='14'>
+            <input type='submit' value='Guardar Peril'>
+            </form>
+        </div><br>
+    </body>
+    </html>
+    _END;
 ?>
