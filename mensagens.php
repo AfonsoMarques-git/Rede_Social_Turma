@@ -59,4 +59,8 @@ if ($ver != "") {
         }
     }
 }
+if (!$num){
+    echo "<br><span class='info'>Não há mensagens</span><br><br>";
+    echo "<br><a data-role='button' href='mensagens.php?ver=$ver'>Atualizar Mensagens</a>";
+}
 ?>
