@@ -52,7 +52,6 @@ if (isset($_GET['adiciona'])) // adicionar como amigo na tabela
     }
 }
 ?>
-
 </ul>
 </div>
 </body>
